@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.corpo{
+    background-image: url(https://forums.terraria.org/index.php?attachments/31583/);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* View height, Visualização 100% da altura*/
+    display: flex; /*Necessário para manipular a posição dos conteudos */
+    justify-content: center; /*eixo X por padrão*/
+    align-items: center; /*eixo Y por padrão*/
+}
+.container{
+    background-color: white;
+    width: 380px;
+    height: 460px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column; /*Por padrão row, usando column inverte as propriedades X e Y*/
+    align-items: center;
+    padding-top: 8px;
+    border: 1px solid black;
+}
+.input_calcular{
+    padding: 12px;
+    border: 1px solid green; /*Recebe 3 parametros, o TAMANHO, o TIPO , e a COR*/
+    width: 160px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-bottom: 8px;
+    
+    
+
+}
+.botao_calcular{
+    padding: 12px;
+    background-color: greenyellow;
+    border-radius: 12px;
+    font-weight: bold;
+    width: 120px;
+    
+}
+
+/*PSEUDO CLASSE*/
+.botao_calcular:hover{ /*HOVER usado quando passa o mouse por cima*/
+    
+    opacity: 0.5;
+    cursor: pointer;
+    color: black;
+    transition: 0.8s;
+    
+}
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color:black ;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    padding: 20px 40px 20px 40px;
+    border-radius: 4px;
+    width: 80px;
+    height: 60px;
+    text-align: center;;
+}
